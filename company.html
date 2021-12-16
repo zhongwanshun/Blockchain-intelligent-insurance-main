@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery粘性滑块导航（响应式）</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+
+</head>
+
+<body>
+    <section class="et-hero-tabs" id="tab-es1">
+        <img src="logo.jpg"  alt="" align ="left" width="250"/>
+        <h1>保险开发平台</h1>
+        <h3>
+            尊重的开发者你好
+            <div>
+                <h2>当前操作账户为: <span class="showAccount"></span></h2>
+            </div>
+            <a  href="index.html">退出登入</a>
+        </h3>
+        
+        <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="#tab-flexbox">创建保险项目</a>
+            <a class="et-hero-tab" href="#tab-react">目前运行中保险项目</a>
+            <a class="et-hero-tab" href="#tab-react5">合约状态</a>
+            <a class="et-hero-tab" href="#tab-es1">返回顶部</a>
+            <span class="et-hero-tab-slider"></span>
+        </div>
+
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+
+        <section class="et-slide" id="tab-flexbox">
+            <h1>创建保险项目</h1>
+            <h3></h3>
+            <div>
+                创建者身份: <input type="text" name="创建者身份" id="ownerId" value="0" /><br>
+                密码: <input type="text" name="密码" id="password" value="1234" /><br>
+                保险项目名称: <input type="text" name="保险项目名称" id="name" value="智能人寿" /><br>
+                要求: <input type="text" name="要求" id="requirements" value="无慢性隐性病" /><br>
+                价格: <input type="text" name="价格" id="price" value="10000000000000" /><br>
+                保赔金额: <input type="text" name="保赔金额" id="inprice" value="10000000000000" /><br>
+                <button class="additems">创建</button>
+            </div>
+        </section>
+        <section class="et-slide" id="tab-react">
+            <h1>智能化科技保险产业链</h1>
+            <h3>致力于建立全新信任社会体系</h3>
+            <button class="getitems">当前保险项目</button>
+            <div id="box1"></div>
+        </section>
+        <section class="et-slide" id="tab-react5">
+            <h1>获取当前合约中余额</h1>
+            <h2>合约</h2>
+            <button class="getBalance">获取</button>
+            <h3><div id="blance"></div></h3>
+            <div>
+            <h3>金额: </h3><input type="text" name="保赔金额" id="give" value="" /><br>
+            <button class="giveMEeth">转入合约</button>
+            <div id="chenggong"></div>
+        </div>
+           
+        </section>
+        
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

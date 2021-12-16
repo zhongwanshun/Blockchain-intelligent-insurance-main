@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery粘性滑块导航（响应式）</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+
+</head>
+
+<body>
+    <section class="et-hero-tabs" id="tab-es1">
+        <img src="logo.jpg"  alt="" align ="left" width="250"/>
+        <h1>个人主页</h1>
+        <h3>
+            尊重的客户你好
+            <div>
+                <h2>当前钱包操作账户为: <span class="showAccount"></span></h2>
+            </div>
+            <a  href="index.html">退出登入</a>
+        </h3>
+        
+        <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="#tab-flexbox">我的保单</a>
+            <a class="et-hero-tab" href="#tab-react">购买保险</a>
+            <a class="et-hero-tab" href="#tab-es1">返回顶部</a>
+            <span class="et-hero-tab-slider"></span>
+        </div>
+
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+        <section class="et-slide" id="tab-flexbox">
+            <h1>您的保单</h1>
+            <h3>属于您的数字隐私资产</h3>
+            <div>
+                <button class="getpolicy">查看保单</button>
+                
+                <div id="box8"></div>
+            </div>
+
+        </section>
+        <section class="et-slide" id="tab-react">
+            <h1>智能化科技保险产业链</h1>
+            <h3>致力于建立全新信任社会体系</h3>
+            <div>
+                投保者地址: <input type="text" name="地址" id="_holdner" value="" /><br>
+                受益者地址: <input type="text" name="地址" id="_benner" value="" /><br>
+                项目id: <input type="text" name="id" id="id7" value="0" /><br>
+                时长: <input type="text" name="时长" id="limit" value="6" /><br>
+                <button class="addpolicy">创建</button>
+                <h2><span class="policyid"></span></h2>
+            </div>
+            <button class="getitems">当前保险项目</button>
+            <div id="box1"></div>
+        </section>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

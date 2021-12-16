@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>智能化科技保险产业链</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="web3.min.js"></script>
+
+</head>
+
+<body>
+  <section class="et-hero-tabs" >
+    <img src="logo.jpg"  alt="" align ="left" width="250"/>
+    <h1>区块链智能保险</h1>
+    <h3>
+      <div ><button class="enableEthereumButton">连接你的账户</button>
+        <h2>当前钱包操作账户为: <span class="showAccount"></span></h2>
+      </div>
+    </h3>
+
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-es6">登入</a>
+      <a class="et-hero-tab" href="#tab-flexbox">注册</a>
+      <a class="et-hero-tab" href="#tab-react">关于我们</a>
+      <a class="et-hero-tab" href="#tab-angular">公司</a>
+      <a class="et-hero-tab" href="#tab-other">其他</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+
+  </section>
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-es6">
+      <h1>登入</h1>
+      <h2>当前钱包操作账户为: <span class="showAccount"></span></h2>
+      <div class="input_control">
+        <h2>账户:</h2><input type="text" class="form_input" placeholder="" id="idx" />
+        <br>
+        <h2>密码：</h2><input type="text" class="form_input" placeholder="" id="pasx" />
+    </div>
+        <button class="getholder" >登入</button>
+        <h2></h2>
+        <h3>没有账户？去注册吧</h3>
+
+    </section>
+    <section class="et-slide" id="tab-flexbox">
+      <h1>注册</h1>
+      <h3>注册属于您自己的账户</h3>
+      <div>
+        <input type="text" name="姓名" id="name1" placeholder="姓名: " /><br>
+        <input type="text" name="个人信息" id="perinfor1" placeholder="信息: " /><br>
+        <input type="text" name="年龄" id="age1" placeholder="年龄: "/><br>
+        <input type="text" name="是否有监护人" id="guardian" placeholder="监护人: "/><br>
+        <input type="text" name="状态" id="obst1" placeholder="状态: "/><br>
+        <input type="text" name="地址" id="owner1" placeholder="地址: "/><br>
+        <input type="text" name="密码" id="password1"  placeholder="密码: "/><br>
+        <button class="addholder">创建</button>
+        <h2><span class="holderid"></span></h2>
+      </div>
+    </section>
+    <section class="et-slide" id="tab-react">
+      <h1>智能化科技保险产业链</h1>
+      <h3>致力于建立全新信任社会体系</h3>
+    </section>
+    <section class="et-slide" id="tab-angular">
+      <h3>为广大人民带来福利是我们的职责</h3>
+      <h1>研发部</h1>
+      <div>
+        <h2>账户:</h2><input type="text" id="companyOwner1"/><br>
+        <h2>密码:</h2><input type="text"  id="passwordijk"/><br>
+        <button class="getcompany">登入</button>
+      </div>
+    </section>
+    <section class="et-slide" id="tab-other">
+      <h1>内部</h1>
+      <h3></h3>
+      <div>
+        职务: <input type="text" name="职务" id="identity" value="boss" /><br>
+        地址: <input type="text" name="地址" id="companyOwner" value="0xd9f6AC641E8C7CCF623603eF5C2e8e1A9aE9f6e0" /><br>
+        密码: <input type="text" name="密码" id="password" value="1234" /><br>
+        <button class="addcompany">创建</button>
+        <h2><span class="companyid"></span></h2>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
